@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.navigation {
+  background:
+    linear-gradient(to bottom, #57d7e2, #349ecd) left,
+    white;
+  background-size: 25% 100%, auto;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative; /* Adicionando position: relative; para que os elementos posicionados absolutamente sejam relativos a este */
+}
+
+.logo,
+.mensagem-welcome,
+.contas-registradas,
+.ver-cadastro,
+.recuperar-senha {
+  position: absolute;
+  left: 13%; /* Centralizando na parte do 13% do background */
+  transform: translateX(-50%); /* Movendo o elemento de volta 50% da sua largura para centralizá-lo */
+}
+
+.logo {
+  width: 250px;
+  height: 250px;
+  top: 150px;
+}
+
+.mensagem-welcome {
+  font-weight: bold;
+  width: 250px;
+  height: 250px;
+  top: 380px;
+}
+
+.contas-registradas {
+  font-size: 20px;
+  padding: 5px;
+  top: 420px;
+}
+
+.ver-cadastro {
+  width: 240px; /* Ajustando a largura para 240px conforme definido no próprio código */
+  height: 55px; /* Ajustando a altura para 55px conforme definido no próprio código */
+  top: 490px;
+  background-color: #f1cc35;
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 23px;
+}
+
+.recuperar-senha {
+  font-style: italic;
+  font-size: 15px;
+  width: 250px;
+  height: 30px;
+  top: 550px;
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+
+.form-label {
+  color: blue; /* Alteração da cor conforme necessário */
+  
+  
+}
+
+
+.confirm-button {
+  background:linear-gradient(to right, #51ccde, #0a5bb3); /* Cor de fundo verde */ 
+  color: white; /* Cor do texto branco */
+  padding: 1px 32px; /* Tamanho do padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px; /* Tamanho da fonte */
+  font-weight: bold;
+  border-radius: 50px; /* Forma do botão */
+  cursor: pointer;
+  
+}
+

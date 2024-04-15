@@ -1,12 +1,19 @@
 import React from 'react';
+import Login from './pages/Login';
+import Registrations from './pages/registrations/Registrations';
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import './App.css';
-import Navigation from './Navigation';
-import Form from './Form';
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      <Router>
+        <Routes>
+          <Route path="*" element={<Navigate to="/login" />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/registrations" element={<Registrations />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

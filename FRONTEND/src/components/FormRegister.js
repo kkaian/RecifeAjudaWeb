@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './App.css';
+import "../App.css";
 import { withRouter } from 'react-router-dom';
-import api from './services/api';
+import api from '../services/api'
 
 const Form = (props) => {
   const history = props.history;
